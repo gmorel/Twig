@@ -22,13 +22,13 @@ The ``reverse`` filter reverses a sequence, a mapping, or a string:
 
         {% for key, value in {1: "a", 2: "b", 3: "c"}|reverse %}
             {{ key }}: {{ value }}
-        {%- endfor %}
+        {% endfor %}
 
         {# output: 0: c    1: b    2: a #}
 
         {% for key, value in {1: "a", 2: "b", 3: "c"}|reverse(true) %}
             {{ key }}: {{ value }}
-        {%- endfor %}
+        {% endfor %}
 
         {# output: 3: c    2: b    1: a #}
 
